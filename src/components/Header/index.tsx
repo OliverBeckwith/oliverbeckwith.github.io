@@ -1,4 +1,4 @@
-import { HeaderImage, HeaderName, HeaderRow } from "./styles.css"
+import { HeaderContainer, HeaderImage, HeaderName, HeaderRow } from "./styles.css"
 import HeaderImageSource from "../../img/me.png"
 import { useEffect, useRef, useState } from "react"
 
@@ -22,9 +22,11 @@ export const Header = () => {
     })
   }, [])
   return (
-    <HeaderRow effectStrength={fxStrength} ref={headerRowRef}>
-      <HeaderImage src={HeaderImageSource}></HeaderImage>
-      <HeaderName>Ollie Beckwith</HeaderName>
-    </HeaderRow>
+    <HeaderContainer>
+      <HeaderRow effectStrength={fxStrength} ref={headerRowRef}>
+        <HeaderImage src={HeaderImageSource}></HeaderImage>
+        <HeaderName>Ollie Beckwith</HeaderName>
+      </HeaderRow>
+    </HeaderContainer>
   )
 }

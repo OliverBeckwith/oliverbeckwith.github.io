@@ -21,12 +21,20 @@ export const HeaderImage = styled.img`
   }
 `;
 
+export const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const HeaderRow = styled.div<{ effectStrength: number }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding-top: 16px;
+  width: 100%;
+  max-width: 1920px;
   
   ${device.laptop} {
     flex-direction: row;
