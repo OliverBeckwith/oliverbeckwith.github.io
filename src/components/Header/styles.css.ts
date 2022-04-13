@@ -45,7 +45,7 @@ export const HeaderRow = styled.div<{ effectStrength: number }>`
 
 export const HeaderName = styled.h1`
   color: black;
-  font-size: 10vw;
+  font-size: max(10vw, 24px);
   font-weight: 400;
   ${device.tablet} {
     font-size: 48px;
