@@ -7,6 +7,6 @@ export const PageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
 `;
