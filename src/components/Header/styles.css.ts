@@ -24,7 +24,7 @@ export const HeaderRow = styled.div<{ effectStrength: number }>`
     flex-direction: row;
   }
 
-  backdrop-filter: blur(${props => props.effectStrength * 8}px);
+  filter: blur(${props => props.effectStrength * 8}px) grayscale(${props => props.effectStrength});
 `;
 
 export const HeaderName = styled.h1`
