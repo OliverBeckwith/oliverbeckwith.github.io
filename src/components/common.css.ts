@@ -58,7 +58,7 @@ export const Strong = styled.strong`
   border-top-right-radius: 4px;
   box-sizing: content-box;
   transition: border 100ms ease-in-out;
-  font-weight: 600;
+  font-weight: 500;
 
   &:hover {
     border-bottom-width: 2px;
