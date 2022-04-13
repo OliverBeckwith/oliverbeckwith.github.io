@@ -6,25 +6,7 @@ function App() {
   return (<>
     <GlobalStyles />
     <Header />
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
-    <p>Filler</p>
+    <h2 style={{ width: "100%", textAlign: "center" }}>Coming Soon!</h2>
   </>
   )
 }
