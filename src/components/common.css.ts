@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { device } from "../../utils/media";
+import { device } from "../utils/media";
 
-export const AboutContainer = styled.div`
+export const SectionContainer = styled.div`
   padding: 0 8px;
 
   ${device.tablet} {
@@ -15,7 +15,7 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const AboutHeader = styled.h2`
+export const SectionHeader = styled.h2`
   font-weight: 500;
   text-align: center;
   font-size: 24px;
@@ -29,7 +29,7 @@ export const AboutHeader = styled.h2`
   }
 `;
 
-export const AboutDescription = styled.p`
+export const SectionDescription = styled.p`
   line-height: 22px;
   text-align: center;
   font-size: 14px;
