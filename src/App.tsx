@@ -1,13 +1,18 @@
 import { Header } from './components/Header'
 import { GlobalStyles } from './components/GlobalStyles'
 import { About } from './components/About'
+import { ContentContainer, PageContainer } from './components/PageContainer'
 
 function App() {
 
   return (<>
     <GlobalStyles />
-    <Header />
-    <About />
+    <PageContainer>
+      <ContentContainer>
+        <Header />
+        <About />
+      </ContentContainer>
+    </PageContainer>
   </>
   )
 }

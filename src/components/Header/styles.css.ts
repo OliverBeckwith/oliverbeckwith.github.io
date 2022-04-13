@@ -21,12 +21,6 @@ export const HeaderImage = styled.img`
   }
 `;
 
-export const HeaderContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const HeaderRow = styled.div<{ effectStrength: number }>`
   display: flex;
   flex-direction: column;
