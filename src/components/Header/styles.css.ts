@@ -21,12 +21,6 @@ export const HeaderImage = styled.img`
   }
 `;
 
-export const HeaderContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const HeaderRow = styled.div<{ effectStrength: number }>`
   display: flex;
   flex-direction: column;
@@ -45,8 +39,9 @@ export const HeaderRow = styled.div<{ effectStrength: number }>`
 
 export const HeaderName = styled.h1`
   color: black;
-  font-size: 10vw;
+  font-size: max(10vw, 24px);
   font-weight: 400;
+  text-align: center;
   ${device.tablet} {
     font-size: 48px;
   }

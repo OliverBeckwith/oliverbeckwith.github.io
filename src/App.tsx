@@ -1,12 +1,18 @@
 import { Header } from './components/Header'
 import { GlobalStyles } from './components/GlobalStyles'
+import { About } from './components/About'
+import { ContentContainer, PageContainer } from './components/PageContainer'
 
 function App() {
 
   return (<>
     <GlobalStyles />
-    <Header />
-    <h2 style={{ width: "100%", textAlign: "center" }}>Coming Soon!</h2>
+    <PageContainer>
+      <ContentContainer>
+        <Header />
+        <About />
+      </ContentContainer>
+    </PageContainer>
   </>
   )
 }
