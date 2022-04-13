@@ -36,7 +36,6 @@ export const ContactIcon = styled.svg`
 
 export const ContactText = styled.span`
   font-size: 16px;
-  cursor: pointer;
   box-sizing: content-box;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
@@ -57,14 +56,21 @@ export const ContactText = styled.span`
   }
 `;
 
-export const ContactMethod = styled.div`
+export const ContactMethod = styled.a`
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   padding: 4px 0;
   margin: 4px 0;
   height: 32px;
+
+  text-decoration: none;
+  &:link { text-decoration: none; color: black; }
+  &:hover { text-decoration: none; color: black; }
+  &:visited { text-decoration: none; color: black; }
+  &:active { text-decoration: none; color: black; }
 
   &:hover ${ContactText} {
     border-left-width: 4px;

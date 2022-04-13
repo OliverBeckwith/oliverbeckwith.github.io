@@ -9,11 +9,11 @@ export const Contact = () => {
     <SectionContainer>
       <SectionHeader>Want to talk?</SectionHeader>
       <ContactMethodContainer>
-      <ContactMethod>
+        <ContactMethod href="mailto:oliverbeckwith1@gmail.com">
         <Email />
         <ContactText>via email</ContactText>
       </ContactMethod>
-      <ContactMethod>
+        <ContactMethod href="https://www.linkedin.com/in/oliverbeckwith/">
         <LinkedIn />
         <ContactText>via LinkedIn</ContactText>
       </ContactMethod>
