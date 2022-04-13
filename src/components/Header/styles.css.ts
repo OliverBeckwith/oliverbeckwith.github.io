@@ -41,6 +41,7 @@ export const HeaderName = styled.h1`
   color: black;
   font-size: max(10vw, 24px);
   font-weight: 400;
+  text-align: center;
   ${device.tablet} {
     font-size: 48px;
   }
