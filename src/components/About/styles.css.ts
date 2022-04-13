@@ -19,7 +19,7 @@ export const Strong = styled.strong`
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-sizing: content-box;
-  transition: all 100ms ease-in-out;
+  transition: border 100ms ease-in-out;
   font-weight: 600;
 
   &:hover {
