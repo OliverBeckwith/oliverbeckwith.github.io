@@ -4,12 +4,20 @@ import { device } from "../../utils/media";
 export const HeaderImage = styled.img`
   transition: all 100ms ease-in-out;
   
+  box-sizing: border-box;
+  border: 4px solid white;
+  border-radius: 16px;
+  box-shadow: 0 0 8px grey;
+
   width: 75%;
   ${device.tablet} {
     width: 360px;
   }
   ${device.desktop} {
     width: 512px;
+    border-width: 8px;
+    border-radius: 32px;
+    box-shadow: 0 0 16px grey;
   }
 `;
 
