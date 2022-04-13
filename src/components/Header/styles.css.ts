@@ -32,7 +32,7 @@ export const HeaderRow = styled.div<{ effectStrength: number }>`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-top: 16px;
+  padding: 16px 0;
   width: 100%;
   max-width: 1920px;
   
