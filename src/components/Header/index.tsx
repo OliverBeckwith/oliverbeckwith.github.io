@@ -14,7 +14,6 @@ export const Header = () => {
         ticking = true;
         window.requestAnimationFrame(function () {
           const value = headerRowRef.current ? Math.min(scrollY / headerRowRef.current.clientHeight, 1) : 0;
-          console.log("value", value)
           setFxStrength(value);
           ticking = false;
         });
