@@ -7,22 +7,15 @@ export const ContactMethodContainer = styled.div`
   padding-left: 16px;
 `;
 
-export const ContactIcon = styled.svg`
-  width: 12px;
-  height: 12px;
-  flex-shrink: 0;
-  flex-grow: 0;
+export const ContactIcon = styled.i`
+  font-size: 2em;
   padding: 8px;
   margin-right: 4px;
+  width: 12px;
 
-  ${device.mobile} {
-    width: 18px;
-    height: 18px;
-  }
   ${device.tablet} {
     margin-right: 8px;
     width: 24px;
-    height: 24px;
   }
   ${device.laptop} {
     margin-right: 12px;
@@ -30,7 +23,6 @@ export const ContactIcon = styled.svg`
   ${device.desktop} {
     margin-right: 16px;
     width: 28px;
-    height: 28px;
   }
 `;
 
