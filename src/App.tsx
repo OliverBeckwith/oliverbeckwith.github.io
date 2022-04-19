@@ -3,6 +3,7 @@ import { GlobalStyles } from './components/GlobalStyles'
 import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { ContentContainer, PageContainer } from './components/PageContainer'
+import { Projects } from './components/Projects'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <ContentContainer>
         <Header />
         <About />
+        <Projects />
         <Contact />
       </ContentContainer>
     </PageContainer>
