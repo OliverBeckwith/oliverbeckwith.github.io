@@ -1,7 +1,5 @@
-import { ContactIcon } from "../styles.css"
+import { ContactIcon } from "../styles.css";
 
 export const LinkedIn = () => {
-  return (
-    <ContactIcon className="fa-brands fa-linkedin" />
-  )
-}
+  return <ContactIcon className="fa-brands fa-linkedin" />;
+};

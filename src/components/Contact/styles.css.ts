@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../utils/media";
+import { theme } from "../common.css";
 
 export const ContactMethodContainer = styled.div`
   display: flex;
@@ -8,12 +9,13 @@ export const ContactMethodContainer = styled.div`
 `;
 
 export const ContactIcon = styled.i`
-  font-size: 2em;
+  font-size: 1.25em;
   padding: 8px;
   margin-right: 4px;
   width: 12px;
 
   ${device.tablet} {
+    font-size: 2em;
     margin-right: 8px;
     width: 24px;
   }
@@ -21,6 +23,7 @@ export const ContactIcon = styled.i`
     margin-right: 12px;
   }
   ${device.desktop} {
+    font-size: 2.25em;
     margin-right: 16px;
     width: 28px;
   }
@@ -32,8 +35,8 @@ export const ContactText = styled.span`
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   padding: 0 4px;
-  background-color: #8888ff44;
-  border-left: 0px solid #8888ff88;
+  background-color: ${theme.colours.linkblue.background};
+  border-left: 0px solid ${theme.colours.linkblue.foreground};
 
   transition: border 100ms ease-in-out;
 
@@ -59,10 +62,22 @@ export const ContactMethod = styled.a`
   height: 32px;
 
   text-decoration: none;
-  &:link { text-decoration: none; color: black; }
-  &:hover { text-decoration: none; color: black; }
-  &:visited { text-decoration: none; color: black; }
-  &:active { text-decoration: none; color: black; }
+  &:link {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
+  &:active {
+    text-decoration: none;
+    color: black;
+  }
 
   &:hover ${ContactText} {
     border-left-width: 4px;
