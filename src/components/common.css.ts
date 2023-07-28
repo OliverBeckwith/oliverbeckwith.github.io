@@ -1,6 +1,23 @@
 import styled from "styled-components"
 import { device } from "../utils/media";
 
+export const theme = {
+  colours: {
+    blue: {
+      foreground: "#8888ff88",
+      background: "#8888ff44",
+    },
+    green: {
+      foreground: "#44ff4488",
+      background: "#44ff4444",
+    },
+    darkgrey: {
+      foreground: "#444444ff",
+      background: "#44444444",
+    },
+  }
+}
+
 export const SectionContainer = styled.div`
   padding: 0 8px;
 
@@ -29,7 +46,7 @@ export const SectionHeader = styled.h2`
   }
 `;
 
-export const SectionDescription = styled.p`
+export const SectionContent = styled.p`
   line-height: 22px;
   text-align: center;
   font-size: 14px;
@@ -50,10 +67,10 @@ export const SectionDescription = styled.p`
 `;
 
 export const Strong = styled.strong`
-  background-color: #8888ff44;
+  background-color: ${theme.colours.blue.background};
   white-space: nowrap;
   padding: 0 2px;
-  border-bottom: 0px solid #8888ff88;
+  border-bottom: 0px solid ${theme.colours.blue.foreground};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-sizing: content-box;
@@ -73,10 +90,10 @@ export const Strong = styled.strong`
 
 export const Link = styled.a`
   cursor: pointer;
-  background-color: #8888ff44;
+  background-color: ${theme.colours.blue.background};
   white-space: nowrap;
   padding: 0 2px;
-  border-bottom: 0px solid #8888ff88;
+  border-bottom: 0px solid ${theme.colours.blue.foreground};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-sizing: content-box;
