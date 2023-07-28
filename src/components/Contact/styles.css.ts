@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../utils/media";
+import { theme } from "../common.css";
 
 export const ContactMethodContainer = styled.div`
   display: flex;
@@ -34,8 +35,8 @@ export const ContactText = styled.span`
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   padding: 0 4px;
-  background-color: #8888ff44;
-  border-left: 0px solid #8888ff88;
+  background-color: ${theme.colours.linkblue.background};
+  border-left: 0px solid ${theme.colours.linkblue.foreground};
 
   transition: border 100ms ease-in-out;
 

@@ -1,8 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "../utils/media";
 
 export const theme = {
   colours: {
+    linkblue: {
+      foreground: "#88bbff88",
+      background: "#88bbff44",
+    },
     blue: {
       foreground: "#8888ff88",
       background: "#8888ff44",
@@ -70,34 +74,26 @@ export const SectionContent = styled.p`
   }
 `;
 
-export const Strong = styled.strong`
-  background-color: ${theme.colours.blue.background};
+export const Strong = styled.strong<{ colour?: keyof typeof theme.colours }>`
+  ${props => props.colour ? css`
+    background-color: ${theme.colours[props.colour].background};
+  ` : css`
+    background-color: ${theme.colours.green.background};
+  `}
   white-space: nowrap;
   padding: 0 2px;
-  border-bottom: 0px solid ${theme.colours.blue.foreground};
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-radius: 4px;
   box-sizing: content-box;
   transition: border 100ms ease-in-out;
   font-weight: 500;
-
-  &:hover {
-    border-bottom-width: 2px;
-    ${device.tablet} {
-      border-bottom-width: 3px;
-    }
-    ${device.desktop} {
-      border-bottom-width: 4px;
-    }
-  }
 `;
 
 export const Link = styled.a`
   cursor: pointer;
-  background-color: ${theme.colours.blue.background};
+  background-color: ${theme.colours.linkblue.background};
   white-space: nowrap;
   padding: 0 2px;
-  border-bottom: 0px solid ${theme.colours.blue.foreground};
+  border-bottom: 0px solid ${theme.colours.linkblue.foreground};
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-sizing: content-box;
