@@ -14,7 +14,8 @@ function App() {
         <ContentContainer>
           <Header />
           <About />
-          <Projects />
+          <Experience />
+          {/* <Projects /> */}
           <Contact />
         </ContentContainer>
       </PageContainer>
