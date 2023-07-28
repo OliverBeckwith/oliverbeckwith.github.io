@@ -8,8 +8,12 @@ export const theme = {
       background: "#8888ff44",
     },
     green: {
-      foreground: "#44ff4488",
-      background: "#44ff4444",
+      foreground: "#44bb4488",
+      background: "#44bb4444",
+    },
+    red: {
+      foreground: "#ff888888",
+      background: "#ff888844",
     },
     darkgrey: {
       foreground: "#444444ff",
