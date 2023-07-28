@@ -1,7 +1,5 @@
-import { ContactIcon } from "../styles.css"
+import { ContactIcon } from "../styles.css";
 
 export const Email = () => {
-  return (
-    <ContactIcon className="fa-solid fa-envelope" />
-  )
-}
+  return <ContactIcon className="fa-solid fa-envelope" />;
+};

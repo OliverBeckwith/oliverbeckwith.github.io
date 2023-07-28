@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { device } from "../utils/media";
 
 export const theme = {
@@ -15,8 +15,8 @@ export const theme = {
       foreground: "#444444ff",
       background: "#44444444",
     },
-  }
-}
+  },
+};
 
 export const SectionContainer = styled.div`
   padding: 0 8px;
@@ -101,7 +101,9 @@ export const Link = styled.a`
   font-weight: 500;
   text-decoration: none;
   color: black;
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     text-decoration: none;
     color: black;
   }

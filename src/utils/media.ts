@@ -4,7 +4,7 @@ export const breakpoint = {
   laptop: 768,
   desktop: 1024,
   widescreen: 1440,
-}
+};
 
 /** Preset media queries for some basic min-width breakpoints */
 export const device = {
@@ -17,5 +17,5 @@ export const device = {
   /** Min width 1024px */
   desktop: `@media (min-width: ${breakpoint.desktop}px)`,
   /** Min width 1440px */
-  widescreen: `@media (min-width: ${breakpoint.widescreen}px)`
+  widescreen: `@media (min-width: ${breakpoint.widescreen}px)`,
 };

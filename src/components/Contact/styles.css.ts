@@ -59,10 +59,22 @@ export const ContactMethod = styled.a`
   height: 32px;
 
   text-decoration: none;
-  &:link { text-decoration: none; color: black; }
-  &:hover { text-decoration: none; color: black; }
-  &:visited { text-decoration: none; color: black; }
-  &:active { text-decoration: none; color: black; }
+  &:link {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
+  &:active {
+    text-decoration: none;
+    color: black;
+  }
 
   &:hover ${ContactText} {
     border-left-width: 4px;

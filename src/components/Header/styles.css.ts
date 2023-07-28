@@ -3,7 +3,7 @@ import { device } from "../../utils/media";
 
 export const HeaderImage = styled.img`
   transition: all 100ms ease-in-out;
-  
+
   box-sizing: border-box;
   border: 4px solid white;
   border-radius: 16px;
@@ -29,12 +29,13 @@ export const HeaderRow = styled.div<{ effectStrength: number }>`
   padding: 16px 0;
   width: 100%;
   max-width: 1920px;
-  
+
   ${device.laptop} {
     flex-direction: row;
   }
 
-  filter: blur(${props => props.effectStrength * 8}px) grayscale(${props => props.effectStrength});
+  filter: blur(${(props) => props.effectStrength * 8}px)
+    grayscale(${(props) => props.effectStrength});
 `;
 
 export const HeaderName = styled.h1`
