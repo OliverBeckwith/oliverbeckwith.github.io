@@ -8,12 +8,13 @@ export const ContactMethodContainer = styled.div`
 `;
 
 export const ContactIcon = styled.i`
-  font-size: 2em;
+  font-size: 1.25em;
   padding: 8px;
   margin-right: 4px;
   width: 12px;
 
   ${device.tablet} {
+    font-size: 2em;
     margin-right: 8px;
     width: 24px;
   }
@@ -21,6 +22,7 @@ export const ContactIcon = styled.i`
     margin-right: 12px;
   }
   ${device.desktop} {
+    font-size: 2.25em;
     margin-right: 16px;
     width: 28px;
   }
